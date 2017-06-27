@@ -1,0 +1,126 @@
+.timeselector-box {
+    user-select: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #646464;
+}
+
+.timeselector-box * {
+    box-sizing: border-box;
+}
+
+.timeselector-table-top {
+    height: 30px;
+    line-height: 30px;
+}
+
+.timeselector-table-top .time-col {
+    float: left;
+    width: 30px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #f6f6f6;
+    border-left: 0;
+}
+
+.timeselector-table-side {
+    float: left;
+    text-align: center;
+}
+
+.timeselector-table-side .week-row {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #f6f6f6;
+    border-top: 0;
+}
+
+.timeselector-table-main {
+    border-spacing: 0;
+}
+
+.timeselector-table-main td {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-right: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.timeselector-table-main td:hover {
+    background: #fbfbfb;
+}
+
+.timeselector-table-main td.active {
+    background: #6291CB;
+}
+
+/*斜线表头*/
+.slash-header {
+    float: left;
+    width: 80px;
+    height: 100%;
+    padding: 0 2px;
+    font-size: 12px;
+    line-height: 1.1;
+    position: relative;
+    border: 1px solid #f6f6f6;
+}
+
+.slash-header-line {
+    width: 84px;
+    height: 1px;
+    background: #f6f6f6;
+    transform-origin: 100% 100%;
+    transform: rotate(19.5deg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slash-header .time-title {
+    text-align: right;
+}
+
+/*表尾*/
+.timeselector-box-ft .handle-group {
+    padding: 10px 0;
+}
+
+.timeselector-box-ft .box-handle-btn {
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    color: #F6F6F6;
+    font-size: inherit;
+    padding: 5px 15px;
+    background: #6291CB;
+}
+
+.timeselector-box-ft .box-handle-btn + .box-handle-btn {
+    margin-left: 5px;
+}
+
+.timeselector-box-ft .box-handle-btn:hover {
+    color: #FFF;
+    background: #6287C3;
+}
+
+.timeselector-box-ft .timeselector-result .title {
+    line-height: 1;
+}
+
+.timeselector-box-ft .timeselector-result p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.timeselector-table-mask {
+    position: absolute;
+    background: rgba(229, 237, 247, 0.31);
+    box-shadow: inset 0 0 0 1px #4D90E3;
+    visibility: hidden;
+    pointer-events: none;
+}
